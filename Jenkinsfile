@@ -39,3 +39,5 @@ pipeline {
 				sh 'docker run -it --name calculator -p 8081:8080  9741223883/calculator'
 			}
         }
+    }
+}	
