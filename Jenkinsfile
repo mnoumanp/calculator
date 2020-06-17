@@ -36,6 +36,6 @@ pipeline {
         }
 		stage('deploy the application') {
 			steps{
-				sh 'mvn package'
+				sh 'docker run -it --name calculator -p 8081:8080  9741223883/calculator'
 			}
         }
