@@ -36,7 +36,7 @@ pipeline {
         }
 		stage('deploy the application') {
 			steps{
-				sh 'docker run -it --name calculator -p 8081:8080  9741223883/calculator'
+				sh 'docker run -i -t -p 8081:8080  --name calculator   9741223883/calculator'
 			}
         }
     }
